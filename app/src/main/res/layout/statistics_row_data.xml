@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/statisticsRow"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    
+    <RelativeLayout 
+            android:id="@+id/statisticsRow_Max"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" >
+         
+            <technited.dota2central.RoundedImageView
+        		android:id="@+id/statisticsRow_Max_HeroPic"
+       			android:layout_width="50dp"
+       	 		android:layout_height="50dp"
+        		android:layout_alignParentLeft="true"
+        		android:layout_marginLeft="5dp"
+        		android:layout_centerVertical="true"
+        		android:layout_marginBottom="20dp"
+        		android:src="@drawable/profile_pic_default" />
+            
+            <LinearLayout 
+                android:id="@+id/statisticsRow_Max_Data"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/statisticsRow_Max_HeroPic"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp">
+                
+                
+                <TextView 
+                	android:id="@+id/statisticsRow_Max_Name"
+               		android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"                
+                	android:textSize="12sp" />
+            
+            	<TextView 
+                	android:id="@+id/statisticsRow_Max_Value"
+                	android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:layout_marginTop="5dp"
+                	android:textSize="12sp"
+                	android:layout_gravity="left" />
+                
+                
+            </LinearLayout>
+            
+        </RelativeLayout>
+        
+    
+    	<RelativeLayout 
+            android:id="@+id/statisticsRow_Min"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/statisticsRow_Max" >
+         
+            <technited.dota2central.RoundedImageView
+        		android:id="@+id/statisticsRow_Min_HeroPic"
+       			android:layout_width="50dp"
+       	 		android:layout_height="50dp"
+        		android:layout_alignParentRight="true"
+        		android:layout_marginRight="5dp"
+        		android:layout_centerVertical="true"
+        		android:src="@drawable/profile_pic_default"
+        		android:layout_marginBottom="20dp" />
+            
+            <LinearLayout 
+                android:id="@+id/statisticsRow_Min_Data"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/statisticsRow_Min_HeroPic"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp">
+                
+                
+                <TextView 
+                	android:id="@+id/statisticsRow_Min_Name"
+               		android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"                
+                	android:textSize="12sp" />
+            
+            	<TextView 
+                	android:id="@+id/statisticsRow_Min_Value"
+                	android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:layout_marginTop="5dp"
+                	android:textSize="12sp"
+                	android:layout_gravity="right" />
+                
+                
+            </LinearLayout>
+            
+        </RelativeLayout>
+        
+    	<View 
+        	android:layout_alignParentBottom="true"
+        	android:layout_width="match_parent"
+        	android:layout_height="1dp"
+        	android:background="@color/backgroundDirtyWhite"/>
+    
+
+</RelativeLayout>

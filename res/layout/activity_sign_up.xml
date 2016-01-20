@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    tools:context="technited.dota2central.SignUp"
+    android:background="@drawable/signup_bg" >
+
+    <technited.dota2central.EquiWHRL
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/white" >
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" 
+            android:layout_centerInParent="true"
+            android:layout_margin="20dp">
+            
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/signup_badge_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+            <TextView 
+                android:id="@+id/customUrlMsg"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/signup_url_head"
+                android:layout_marginTop="35dp"/>
+            <LinearLayout
+                android:layout_gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+                
+                <ImageView 
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/signup_link_icon"
+                    android:layout_gravity="center_vertical"/>
+                
+            	<EditText 
+            	    android:id="@+id/textBoxText"
+                	android:layout_width="match_parent"
+                	android:layout_height="40dp"
+                	android:background="@drawable/txtbox"
+                	android:hint="@string/signup_url_hint"
+                	android:layout_marginLeft="5dp"
+                	android:onClick="vanityURLBoxTapped"
+                	android:textSize="14sp"
+                    android:singleLine="true"  />
+            	
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                
+                <Button
+                    android:id="@+id/checkbox"
+                    android:layout_width="20dp"
+                    android:layout_height="20sp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/signup_checkbox_off"
+                    android:onClick="checkboxTicked" />
+                
+                <TextView 
+                    android:id="@+id/checkBoxText"
+                	android:layout_gravity="center_horizontal"
+                	android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:text="@string/signup_check_msg"
+                	android:textSize="10sp" />
+                
+            </LinearLayout>
+            
+            <Button 
+                android:id="@+id/submitButton"
+                android:layout_width="150dp"
+             	android:layout_height="40dp"
+             	android:background="@drawable/signup_button_image"
+             	android:text="@string/signup_submit"
+             	android:textSize="15sp"
+             	android:textColor="@color/white"
+             	android:layout_gravity="center_horizontal"
+             	android:layout_marginTop="10dp"
+             	android:onClick="submitVanityUrl"/>
+            
+        </LinearLayout>
+        
+    </technited.dota2central.EquiWHRL>
+
+</RelativeLayout>
+
+

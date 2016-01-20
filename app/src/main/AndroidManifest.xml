@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="technited.dota2central"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:xlargeScreens="false"
+        android:smallScreens="false"
+        android:resizeable="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        <activity
+            android:name="technited.dota2central.MainScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="technited.dota2central.SignUp"
+            android:label="@string/title_activity_sign_up"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="technited.dota2central.SpashScreen"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="technited.dota2central.MatchHistory"
+            android:label="@string/title_activity_match_history"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="technited.dota2central.MatchDetails"
+            android:label="@string/title_activity_match_details"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="technited.dota2central.FriendProfile"
+            android:label="@string/title_activity_friend_profile"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="technited.dota2central.HeroFilter"
+            android:label="@string/title_activity_hero_filter" >
+        </activity>
+
+        <receiver
+            android:name="technited.dota2central.NotificationReciever"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="technited.dota2central.Settings"
+            android:label="@string/title_activity_settings"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

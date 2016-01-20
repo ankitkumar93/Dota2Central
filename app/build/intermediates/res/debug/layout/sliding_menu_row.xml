@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="240dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/sliding_menu_list_selector_background" >
+    
+    <ImageView 
+        android:id="@+id/slidingMenuRowIcon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="20dp"
+        android:layout_centerVertical="true" />
+    
+    <TextView
+        android:id="@+id/slidingMenuRowName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/slidingMenuRowIcon"
+        android:layout_centerVertical="true"
+        android:textSize="14sp"
+        android:textColor="@drawable/sliding_menu_list_selector_text" />
+    
+    <View 
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/backgroundDirtyWhite"/>
+
+</RelativeLayout>
+<!-- From: file:/G:/Android%20Dev/Android%20Apps/Dota2Central/app/src/main/res/layout/sliding_menu_row.xml -->

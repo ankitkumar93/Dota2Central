@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle" >
+   <solid android:color="#e8e8e8" />
+   <stroke android:width="1dip" android:color="#d7d7d7"/>
+</shape><!-- From: file:/G:/Android%20Dev/Android%20Apps/Dota2Central/app/src/main/res/drawable-hdpi/txtbox.xml -->

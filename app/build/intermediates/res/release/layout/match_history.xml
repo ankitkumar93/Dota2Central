@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="technited.dota2central.MatchHistory"
+    android:background="@color/white" >
+    
+    
+    <!-- Action Bar Custom-->
+  <include
+    android:id="@+id/d2cActionBar"  
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_alignParentTop="true"
+    layout="@layout/d2c_action_bar" />
+  
+  <android.support.v4.widget.DrawerLayout
+    	android:id="@+id/drawer_layout_3"
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:layout_below="@+id/d2cActionBar" >
+  
+  <RelativeLayout 
+      android:id="@+id/matchHistoryContainer"
+      android:layout_height="match_parent"
+      android:layout_width="match_parent"
+      android:layout_below="@+id/d2cActionBar"
+      android:layout_marginTop="15dp" >"
+  
+  <TextView
+      android:id="@+id/matchHistory_FilterLabel"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/filters_label_text"
+      android:layout_alignParentTop="true"
+      android:layout_marginLeft="10dp"
+      android:textSize="12sp" />
+  
+  <HorizontalScrollView
+      android:id="@+id/matchHistory_FilterScrollView"
+      android:layout_height="wrap_content"
+      android:layout_width="match_parent"
+      android:layout_marginTop="5dp"
+      android:layout_marginLeft="10dp"
+      android:layout_below="@+id/matchHistory_FilterLabel" >
+      
+  
+      <RelativeLayout 
+          android:id="@+id/matchHistory_FilterImages"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+      
+      
+  </HorizontalScrollView>
+  
+  
+  <TextView
+      android:id="@+id/matchHistory_addFilterButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/filters_add_label_text"
+      android:layout_marginTop="5dp"
+      android:layout_marginLeft="10dp"
+      android:layout_below="@+id/matchHistory_FilterScrollView"
+      android:textSize="12sp"
+      android:clickable="true"
+      android:onClick="addFilters" />
+  
+  <TextView
+      android:id="@+id/matchHistory_editFilterButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/filters_edit_label_text"
+      android:layout_marginTop="10dp"
+      android:layout_marginLeft="10dp"
+      android:layout_below="@+id/matchHistory_FilterScrollView"
+      android:textSize="12sp"
+      android:clickable="true"
+      android:onClick="editFilters"
+      android:visibility="invisible" />
+  
+  <TextView
+      android:id="@+id/matchHistory_removeFilterButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/filters_remove_label_text"
+      android:layout_marginTop="10dp"
+      android:layout_marginRight="10dp"
+      android:layout_alignParentRight="true"
+      android:layout_below="@+id/matchHistory_FilterScrollView"
+      android:textSize="12sp"
+      android:clickable="true"
+      android:onClick="removeFilters"
+      android:visibility="invisible" />
+  
+  <ImageView
+      android:id="@+id/matchHistory_HistoryTopSeperator"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:src="@drawable/grey_seperator_1px"
+      android:layout_below="@+id/matchHistory_addFilterButton"
+      android:layout_marginTop="5dp"/>
+  
+  <ListView
+      android:id="@+id/matchHistory_matchHistoryList"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_gravity="start"
+      android:layout_below="@+id/matchHistory_HistoryTopSeperator"
+      android:choiceMode="singleChoice"
+      android:divider="@null"
+      android:background="@color/white" />
+     
+  
+  </RelativeLayout>
+  
+  <ListView android:id="@+id/left_drawer_3"
+        android:layout_width="260dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="@null"
+        android:background="@color/white" />
+    
+  </android.support.v4.widget.DrawerLayout>
+    
+</RelativeLayout>
+
+<!-- From: file:/G:/Android%20Dev/Android%20Apps/Dota2Central/app/src/main/res/layout/match_history.xml -->

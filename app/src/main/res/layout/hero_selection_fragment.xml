@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    
+    <EditText
+        android:id="@+id/heroFilters_searchBox"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="14sp"
+        android:singleLine="true"
+        android:inputType="text"
+        android:gravity="top"
+        android:background="@color/backgroundDirtyWhite"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+    
+   	<View
+   	    android:id="@+id/heroFilters_TopSeperator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/matchDetailSeperator"
+        android:layout_below="@+id/heroFilters_searchBox"/>
+   	
+   	<ListView
+   	    android:id="@+id/heroFilters_HeroList"
+   	    android:layout_width="match_parent"
+   	    android:layout_height="match_parent"
+   	    android:layout_below="@+id/heroFilters_TopSeperator"
+   	    android:choiceMode="none"
+   	    android:divider="@null"
+   	    android:background="@color/white"
+   	    android:gravity="start" />
+    
+</RelativeLayout>

@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <RelativeLayout 
+        android:id="@+id/mapStatus"
+        android:layout_centerHorizontal="true"
+        android:layout_width="320dp"
+        android:layout_height="320dp" >
+        
+        <ImageView
+            android:id="@+id/mapStatus_mapImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/map" />
+
+        
+        <!-- Radiant -->
+        
+        <ImageView
+            android:id="@+id/mapStatus_radiantAncient"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/radiant_ancient"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginBottom="32dp"
+            />
+        
+        <ImageView
+            android:id="@+id/mapStatus_radiantTowerAncientTop"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/tower_radiant"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="32dp"
+            android:layout_marginBottom="52dp"
+            />
+        
+        <ImageView
+            android:id="@+id/mapStatus_radiantTowerAncientBot"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/tower_radiant"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="42dp"
+            android:layout_marginBottom="38dp"
+            />
+        
+        
+        <ImageView
+            android:id="@+id/mapStatus_radiantBaracksMidMeele"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/radiant_melee"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="55dp"
+            android:layout_marginBottom="55dp"
+            />
+        
+        <ImageView
+            android:id="@+id/mapStatus_radiantBaracksMidRanged"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/radiant_ranged"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="42dp"
+            android:layout_marginBottom="65dp"
+            />
+        
+        <ImageView
+            android:id="@+id/mapStatus_radiantBaracksBotMeele"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/radiant_melee"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="65dp"
+            android:layout_marginBottom="20dp"
+            />
+        
+        <ImageView
+            android:id="@+id/mapStatus_radiantBaracksBotRanged"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/radiant_ranged"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="65dp"
+            android:layout_marginBottom="35dp"
+            />
+        
+        <ImageView
+            android:id="@+id/mapStatus_radiantBaracksTopMeele"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/radiant_melee"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="75dp"
+            />
+        
+        <ImageView
+            android:id="@+id/mapStatus_radiantBaracksTopRanged"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/radiant_ranged"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginBottom="75dp"
+            />
+        
+        <ImageView
+            android:id="@+id/mapStatus_radiantTowerMid_3"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/tower_radiant"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="55dp"
+            android:layout_marginBottom="70dp"
+            />
+        
+        <ImageView
+            android:id="@+id/mapStatus_radiantTowerBot_3"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/tower_radiant"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="75dp"
+            android:layout_marginBottom="25dp"
+            />
+        
+        <ImageView
+            android:id="@+id/mapStatus_radiantTowerTop_3"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/tower_radiant"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="90dp"
+            />
+        
+        <ImageView
+            android:id="@+id/mapStatus_radiantTowerMid_2"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/tower_radiant"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="75dp"
+            android:layout_marginBottom="90dp"
+            />
+        
+        <ImageView
+            android:id="@+id/mapStatus_radiantTowerBot_2"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/tower_radiant"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="140dp"
+            android:layout_marginBottom="22dp"
+            />
+        
+        <ImageView
+            android:id="@+id/mapStatus_radiantTowerTop_2"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/tower_radiant"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginBottom="140dp"
+            />
+        
+        <ImageView
+            android:id="@+id/mapStatus_radiantTowerMid"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/tower_radiant"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="125dp"
+            android:layout_marginBottom="125dp"
+            />
+        
+        <ImageView
+            android:id="@+id/mapStatus_radiantTowerBot"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/tower_radiant"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="260dp"
+            android:layout_marginBottom="25dp"
+            />
+        
+        <ImageView
+            android:id="@+id/mapStatus_radiantTowerTop"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/tower_radiant"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginBottom="200dp"
+            />
+        
+        <!-- Dire -->
+        
+        <ImageView
+            android:id="@+id/mapStatus_direAncient"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/dire_ancient"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="45dp"
+            />
+        
+        <ImageView
+            android:id="@+id/mapStatus_direTowerAncientTop"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/tower_dire"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="48dp"
+            android:layout_marginTop="52dp"
+            />
+        
+        <ImageView
+            android:id="@+id/mapStatus_direTowerAncientBot"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/tower_dire"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="38dp"
+            android:layout_marginTop="65dp" />
+        
+        
+        <ImageView
+            android:id="@+id/mapStatus_direBaracksMidMeele"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/dire_melee"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="55dp"
+            android:layout_marginTop="75dp"
+            />
+        
+        <ImageView
+            android:id="@+id/mapStatus_direBaracksMidRanged"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/dire_ranged"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="70dp"
+            android:layout_marginTop="65dp"
+            />
+        
+        <ImageView
+            android:id="@+id/mapStatus_direBaracksBotMeele"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/dire_melee"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="85dp"
+            />
+        
+        <ImageView
+            android:id="@+id/mapStatus_direBaracksBotRanged"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/dire_ranged"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="70dp"
+            android:layout_marginTop="25dp"
+            />
+        
+        <ImageView
+            android:id="@+id/mapStatus_direBaracksTopMeele"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/dire_melee"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="70dp"
+            android:layout_marginTop="40dp"
+            />
+        
+        <ImageView
+            android:id="@+id/mapStatus_direBaracksTopRanged"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/dire_ranged"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="85dp"
+            />
+        
+        <ImageView
+            android:id="@+id/mapStatus_direTowerMid_3"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/tower_dire"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="68dp"
+            android:layout_marginTop="78dp"
+            />
+        
+        <ImageView
+            android:id="@+id/mapStatus_direTowerBot_3"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/tower_dire"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="100dp"
+            />
+        
+        <ImageView
+            android:id="@+id/mapStatus_direTowerTop_3"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/tower_dire"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="82dp"
+            android:layout_marginTop="30dp"
+            />
+        
+        <ImageView
+            android:id="@+id/mapStatus_direTowerMid_2"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/tower_dire"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="100dp"
+            />
+        
+        <ImageView
+            android:id="@+id/mapStatus_direTowerBot_2"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/tower_dire"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="142dp"
+            />
+        
+        <ImageView
+            android:id="@+id/mapStatus_direTowerTop_2"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/tower_dire"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="150dp"
+            android:layout_marginTop="25dp"
+            />
+        
+        <ImageView
+            android:id="@+id/mapStatus_direTowerMid"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/tower_dire"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="130dp"
+            android:layout_marginTop="145dp"
+            />
+        
+        <ImageView
+            android:id="@+id/mapStatus_direTowerBot"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/tower_dire"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="22dp"
+            android:layout_marginTop="190dp"
+            />
+        
+        <ImageView
+            android:id="@+id/mapStatus_direTowerTop"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/tower_dire"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="260dp"
+            android:layout_marginTop="22dp"
+            />
+    
+    </RelativeLayout>
+    
+    <TextView 
+        android:id="@+id/mapStatus_shareImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/share_image"
+        android:textSize="12sp"
+        android:layout_below="@+id/mapStatus"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:clickable="true"
+        android:onClick="shareImage" />
+    
+    <TextView 
+        android:id="@+id/mapStatus_enableDoodle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enable_doodle"
+        android:textSize="12sp"
+        android:layout_below="@+id/mapStatus_shareImage"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:clickable="true"
+        android:onClick="enableDoodle" />
+    
+    <TextView 
+        android:id="@+id/mapStatus_clearDoodle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/clear_doodle"
+        android:textSize="12sp"
+        android:layout_below="@+id/mapStatus_shareImage"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:visibility="invisible"
+        android:clickable="true"
+        android:onClick="clearDoodle" />
+    
+    <TextView 
+        android:id="@+id/mapStatus_exitDoodle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/exit_doodle"
+        android:textSize="12sp"
+        android:layout_below="@+id/mapStatus_shareImage"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:visibility="invisible"
+        android:clickable="true"
+        android:onClick="exitDoodle" />
+    
+
+</RelativeLayout>

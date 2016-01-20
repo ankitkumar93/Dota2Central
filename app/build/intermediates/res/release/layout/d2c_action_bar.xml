@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/white"
+    android:orientation="horizontal" >
+    
+    <ImageButton 
+        android:id="@+id/toggleNavigationDrawer"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/navigation_drawer_icon"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:onClick="toggleNavigationDrawer" />
+    
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:src="@drawable/action_bar_logo" />
+    
+    <ImageButton
+        android:id="@+id/refreshContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/action_bar_refresh"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:onClick="refreshAllContent" />
+    
+    <ProgressBar
+     	android:id="@+id/loader_bar"
+    	android:layout_width="wrap_content"
+     	android:layout_height="wrap_content"
+     	style="@android:style/Widget.ProgressBar.Small"
+     	android:layout_marginRight="5dp"
+     	android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible" />
+
+</RelativeLayout>
+<!-- From: file:/G:/Android%20Dev/Android%20Apps/Dota2Central/app/src/main/res/layout/d2c_action_bar.xml -->

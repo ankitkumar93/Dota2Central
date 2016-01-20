@@ -1,0 +1,3 @@
+G:\Android Dev\Android Apps\Dota2Central\app\build\intermediates\classes\release
+G:\Android Dev\Android Apps\Dota2Central\app\build\intermediates\pre-dexed\release\classes-38da7ef315547dbe4f49cf6229abb4ca8faae3c6.jar
+G:\Android Dev\Android Apps\Dota2Central\app\build\intermediates\pre-dexed\release\support-v4-19.1.0-d7caca780655e1d438da61b985c6607a27d6c022.jar

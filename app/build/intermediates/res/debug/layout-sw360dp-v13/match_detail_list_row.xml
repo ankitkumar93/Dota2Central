@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    
+    <android.support.v4.view.ViewPager
+    	android:id="@+id/matchDetailsPager"
+    	android:layout_width="match_parent"
+    	android:layout_height="50dp"
+    	android:layout_marginTop="5dp"
+    	android:layout_marginBottom="5dp" >
+    	
+        
+        <RelativeLayout
+            android:id="@+id/matchDetailStats"
+    		android:layout_width="match_parent"
+    		android:layout_height="match_parent" >
+    
+    
+    	 <technited.dota2central.RoundedImageView
+        	android:id="@+id/matchDetailRow_HeroPic"
+       		android:layout_width="50dp"
+       	 	android:layout_height="50dp"
+        	android:layout_alignParentLeft="true"
+        	android:layout_centerVertical="true"
+        	android:layout_marginLeft="10dp"
+        	android:src="@drawable/profile_pic_default" />
+    	
+    	<LinearLayout
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:orientation="vertical"
+        	android:layout_toRightOf="@+id/matchDetailRow_HeroPic"
+        	android:layout_centerVertical="true"
+        	android:layout_marginLeft="10dp" >
+    	
+    	<TextView
+        	android:id="@+id/matchDetailRow_PlayerName"
+        	android:layout_width="wrap_content"
+       	 	android:layout_height="wrap_content"
+        	android:textSize="18sp"
+        	android:singleLine="true"
+        	android:maxWidth="120dp" />
+    	<TextView 
+    	    android:id="@+id/matchDetailRow_HeroName"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:textSize="12sp" />
+    	
+   	 	</LinearLayout>
+    
+    	<TextView
+        	android:id="@+id/matchDetailRow_Hits"
+        	android:layout_width="50dp"
+        	android:layout_height="wrap_content"
+        	android:textSize="14sp"
+        	android:layout_alignParentRight="true"
+        	android:layout_marginRight="10dp"
+        	android:layout_centerVertical="true"
+        	android:textAlignment="center"
+        	android:gravity="center" />
+    
+    	<TextView
+        	android:id="@+id/matchDetailRow_Assists"
+        	android:layout_width="20dp"
+        	android:layout_height="wrap_content"
+       	 	android:textSize="14sp"
+       	 	android:layout_toLeftOf="@+id/matchDetailRow_Hits"
+        	android:layout_marginRight="15dp"
+        	android:layout_centerVertical="true"
+        	android:textAlignment="center"
+        	android:gravity="center" />
+    
+   		<TextView
+        	android:id="@+id/matchDetailRow_Deaths"
+       	 	android:layout_width="20dp"
+        	android:layout_height="wrap_content"
+        	android:textSize="14sp"
+        	android:layout_toLeftOf="@+id/matchDetailRow_Assists"
+        	android:layout_marginRight="10dp"
+        	android:layout_centerVertical="true"
+        	android:textAlignment="center"
+        	android:gravity="center" />
+    	<TextView
+        	android:id="@+id/matchDetailRow_Kills"
+        	android:layout_width="20dp"
+        	android:layout_height="wrap_content"
+        	android:textSize="14sp"
+        	android:layout_toLeftOf="@+id/matchDetailRow_Deaths"
+        	android:layout_marginRight="10dp"
+        	android:layout_centerVertical="true"
+        	android:textAlignment="center"
+        	android:gravity="center" />
+    
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/matchDetailItems"
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent" >
+        
+        <technited.dota2central.RoundedImageView
+        	android:id="@+id/matchDetailRow_Item_1"
+        	android:layout_width="40dp"
+        	android:layout_height="40dp"
+        	android:layout_alignParentLeft="true"
+        	android:layout_centerVertical="true"
+        	android:layout_marginLeft="5dp"
+        	android:src="@drawable/dark_grey_back" />
+        
+        <technited.dota2central.RoundedImageView
+        	android:id="@+id/matchDetailRow_Item_2"
+        	android:layout_width="40dp"
+        	android:layout_height="40dp"
+        	android:layout_toRightOf="@+id/matchDetailRow_Item_1"
+        	android:layout_centerVertical="true"
+        	android:layout_marginLeft="5dp"
+        	android:src="@drawable/dark_grey_back" />
+        
+        <technited.dota2central.RoundedImageView
+        	android:id="@+id/matchDetailRow_Item_3"
+        	android:layout_width="40dp"
+        	android:layout_height="40dp"
+        	android:layout_toRightOf="@+id/matchDetailRow_Item_2"
+        	android:layout_centerVertical="true"
+        	android:layout_marginLeft="5dp"
+        	android:src="@drawable/dark_grey_back" />
+        
+        <technited.dota2central.RoundedImageView
+        	android:id="@+id/matchDetailRow_Item_4"
+        	android:layout_width="40dp"
+        	android:layout_height="40dp"
+        	android:layout_toRightOf="@+id/matchDetailRow_Item_3"
+        	android:layout_centerVertical="true"
+        	android:layout_marginLeft="5dp"
+        	android:src="@drawable/dark_grey_back" />
+        
+        <technited.dota2central.RoundedImageView
+        	android:id="@+id/matchDetailRow_Item_5"
+        	android:layout_width="40dp"
+        	android:layout_height="40dp"
+        	android:layout_toRightOf="@+id/matchDetailRow_Item_4"
+        	android:layout_centerVertical="true"
+        	android:layout_marginLeft="5dp"
+        	android:src="@drawable/dark_grey_back" />
+        
+        <technited.dota2central.RoundedImageView
+        	android:id="@+id/matchDetailRow_Item_6"
+        	android:layout_width="40dp"
+        	android:layout_height="40dp"
+        	android:layout_toRightOf="@+id/matchDetailRow_Item_5"
+        	android:layout_centerVertical="true"
+        	android:layout_marginLeft="5dp"
+        	android:src="@drawable/dark_grey_back" />
+        
+        <RelativeLayout
+            android:id="@+id/matchDetailRow_PerMinStats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true" >
+    	
+            <TextView
+                android:id="@+id/matchDetailRow_PerMinStats_GPM_Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:textColor="@color/black" />
+            
+            <TextView
+                android:id="@+id/matchDetailRow_PerMinStats_GPM_Label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/match_details_gpm_label"
+                android:textSize="12sp"
+                android:layout_toLeftOf="@+id/matchDetailRow_PerMinStats_GPM_Text"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/matchDetailHeaders" />
+            
+            <TextView
+                android:id="@+id/matchDetailRow_PerMinStats_XPM_Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/matchDetailRow_PerMinStats_GPM_Text"
+                android:textColor="@color/black" />
+            
+            <TextView
+                android:id="@+id/matchDetailRow_PerMinStats_XPM_Label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/match_details_xpm_label"
+                android:textSize="12sp"
+                android:layout_below="@+id/matchDetailRow_PerMinStats_GPM_Label"
+                android:layout_toLeftOf="@+id/matchDetailRow_PerMinStats_XPM_Text"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/matchDetailHeaders" />
+              
+        </RelativeLayout>
+        
+    </RelativeLayout>
+        
+    	
+        
+    </android.support.v4.view.ViewPager>
+
+    
+</RelativeLayout>
+<!-- From: file:/G:/Android%20Dev/Android%20Apps/Dota2Central/app/src/main/res/layout-sw360dp/match_detail_list_row.xml -->

@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/settingsContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="technited.dota2central.Settings"
+    android:background="@color/white" >
+    
+     <!-- Action Bar Custom-->
+  <include
+    android:id="@+id/d2cActionBar_4"  
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_alignParentTop="true"
+    layout="@layout/d2c_action_bar_4" />
+  
+  <android.support.v4.widget.DrawerLayout
+    android:layout_below="@+id/d2cActionBar_4"
+    android:id="@+id/drawer_layout_4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  
+      <RelativeLayout 
+          android:id="@+id/settingsContent"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_marginTop="20dp" >
+    
+
+          <TextView 
+        	android:id="@+id/settingsHead"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentTop="true"
+        	android:layout_alignParentLeft="true"
+        	android:layout_marginLeft="10dp"
+        	android:textSize="16sp"
+        	android:text="@string/title_activity_settings" />
+        
+    <View 
+        android:id="@+id/settingsSeperator_Top"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/settingsHead"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/backgroundDirtyWhite" />
+    
+    <RelativeLayout
+        android:id="@+id/settingsNotification"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/settingsSeperator_Top" >
+    
+    	<TextView 
+        	android:id="@+id/settingsNotification_Text"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_centerVertical="true"
+        	android:layout_marginLeft="5dp"
+        	android:textSize="12sp"
+        	android:text="@string/notification_setting_text" />
+    
+	    <Switch
+    	    android:id="@+id/settingsNotification_Toggle"
+        	android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+        	android:textOn="On"
+    	    android:textOff="Off"
+        	android:layout_centerVertical="true"
+        	android:layout_marginRight="5dp"
+        	android:layout_alignParentRight="true"
+        	android:layout_toRightOf="@+id/settingsNotification_Text"
+        	android:onClick="notificationSettingsToggle"/>
+    </RelativeLayout>
+    
+    </RelativeLayout>
+    
+      <ListView
+          android:id="@+id/left_drawer_4"
+          android:layout_width="260dp"
+          android:layout_height="match_parent"
+          android:layout_gravity="start"
+          android:choiceMode="singleChoice"
+          android:divider="@null"
+          android:background="@color/white" />
+    
+    </android.support.v4.widget.DrawerLayout>
+    
+    
+</RelativeLayout>
+
+<!-- From: file:/G:/Android%20Dev/Android%20Apps/Dota2Central/app/src/main/res/layout/activity_settings.xml -->

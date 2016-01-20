@@ -1,0 +1,101 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+    
+    <RelativeLayout
+        android:id="@+id/matchDetail_Top"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true" >
+        
+        <RelativeLayout 
+            android:id="@+id/matchDetail_Top_radiantKills"
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp" >
+        <ImageView
+            android:id="@+id/matchDetail_Top_radiantKillsBack"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true" />
+        
+        <TextView 
+            android:id="@+id/matchDetail_Top_radiantKillsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+        
+        </RelativeLayout>
+        
+        <RelativeLayout 
+            android:id="@+id/matchDetail_Top_direKills"
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp" >
+        <ImageView
+            android:id="@+id/matchDetail_Top_direKillsBack"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true" />
+        
+        <TextView 
+            android:id="@+id/matchDetail_Top_direKillsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+        
+        </RelativeLayout>
+        
+        <LinearLayout
+            android:id="@+id/matchDetail_Top_MatchStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true" >
+        
+            <TextView 
+                android:id="@+id/matchDetail_Top_MatchStatus_VictoryLabel"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="18sp"
+                android:layout_gravity="center"/>
+            
+            <TextView
+                android:id="@+id/matchDetail_Top_MatchStatus_MatchDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_gravity="center" />
+            
+        </LinearLayout>
+        
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/matchDetailSeperator"
+            android:layout_alignParentBottom="true"/>
+        
+    </RelativeLayout>
+    
+    <ListView 
+        android:id="@+id/matchDetail_playerList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+     	android:layout_below="@+id/matchDetail_Top"
+      	android:choiceMode="none"
+      	android:divider="@null"
+      	android:background="@color/backgroundDirtyWhite" />
+
+</RelativeLayout>
+<!-- From: file:/G:/Android%20Dev/Android%20Apps/Dota2Central/app/src/main/res/layout/match_detail_fragment.xml -->

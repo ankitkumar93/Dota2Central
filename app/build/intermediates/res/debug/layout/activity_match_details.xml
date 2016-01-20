@@ -1,0 +1,58 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_contatiner_2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="technited.dota2central.MatchDetails" >
+    <!-- Action Bar Custom-->
+  <include
+    android:id="@+id/d2cActionBar_2"  
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_alignParentTop="true"
+    layout="@layout/d2c_action_bar_2" />
+  
+<android.support.v4.widget.DrawerLayout
+    android:layout_below="@+id/d2cActionBar_2"
+    android:id="@+id/drawer_layout_2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+    
+    <android.support.v4.view.ViewPager
+    android:id="@+id/pager_2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true" >
+ 
+    <android.support.v4.view.PagerTabStrip
+        android:id="@+id/pager_header_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:background="@drawable/mainscreen_tabs_scroller"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp"
+        android:textColor="@color/red" />
+ 
+</android.support.v4.view.ViewPager>
+    
+</RelativeLayout>
+
+<ListView android:id="@+id/left_drawer_2"
+        android:layout_width="260dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="@null"
+        android:background="@color/white" />
+
+</android.support.v4.widget.DrawerLayout>
+</RelativeLayout><!-- From: file:/G:/Android%20Dev/Android%20Apps/Dota2Central/app/src/main/res/layout/activity_match_details.xml -->

@@ -1,0 +1,598 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Risky Project Location:
+-----------------------
+The tools *should* handle project locations in any directory. However,
+due to bugs, placing projects in directories containing spaces in the
+path, or characters like ", ' and &, have had issues. We're working to
+eliminate these bugs, but to save yourself headaches you may want to
+move your project to a location where this is not a problem.
+G:\Android Dev\Android Apps\Dota2Central
+          -           -                 
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .idea\
+* .idea\.name
+* .idea\compiler.xml
+* .idea\copyright\
+* .idea\copyright\profiles_settings.xml
+* .idea\encodings.xml
+* .idea\misc.xml
+* .idea\modules.xml
+* .idea\scopes\
+* .idea\scopes\scope_settings.xml
+* .idea\vcs.xml
+* .idea\workspace.xml
+* app\
+* app\build.gradle
+* app\src\
+* app\src\main\
+* app\src\main\AndroidManifest.xml
+* app\src\main\assets\
+* app\src\main\assets\fonts\
+* app\src\main\assets\fonts\OpenSans-ExtraBoldItalic.ttf
+* app\src\main\assets\fonts\OpenSans-Light.ttf
+* app\src\main\assets\fonts\OpenSans-Semibold.ttf
+* app\src\main\assets\fonts\segoeui.ttf
+* app\src\main\assets\fonts\segoeuil.ttf
+* app\src\main\assets\heroimages\
+* app\src\main\assets\heroimages\abaddon.png
+* app\src\main\assets\heroimages\alchemist.png
+* app\src\main\assets\heroimages\ancient_apparition.png
+* app\src\main\assets\heroimages\antimage.png
+* app\src\main\assets\heroimages\axe.png
+* app\src\main\assets\heroimages\bane.png
+* app\src\main\assets\heroimages\batrider.png
+* app\src\main\assets\heroimages\beastmaster.png
+* app\src\main\assets\heroimages\bloodseeker.png
+* app\src\main\assets\heroimages\bounty_hunter.png
+* app\src\main\assets\heroimages\brewmaster.png
+* app\src\main\assets\heroimages\bristleback.png
+* app\src\main\assets\heroimages\broodmother.png
+* app\src\main\assets\heroimages\centaur.png
+* app\src\main\assets\heroimages\chaos_knight.png
+* app\src\main\assets\heroimages\chen.png
+* app\src\main\assets\heroimages\clinkz.png
+* app\src\main\assets\heroimages\crystal_maiden.png
+* app\src\main\assets\heroimages\dark_seer.png
+* app\src\main\assets\heroimages\dazzle.png
+* app\src\main\assets\heroimages\death_prophet.png
+* app\src\main\assets\heroimages\disruptor.png
+* app\src\main\assets\heroimages\doom_bringer.png
+* app\src\main\assets\heroimages\dragon_knight.png
+* app\src\main\assets\heroimages\drow_ranger.png
+* app\src\main\assets\heroimages\earthshaker.png
+* app\src\main\assets\heroimages\elder_titan.png
+* app\src\main\assets\heroimages\enchantress.png
+* app\src\main\assets\heroimages\enigma.png
+* app\src\main\assets\heroimages\faceless_void.png
+* app\src\main\assets\heroimages\furion.png
+* app\src\main\assets\heroimages\gyrocopter.png
+* app\src\main\assets\heroimages\huskar.png
+* app\src\main\assets\heroimages\invoker.png
+* app\src\main\assets\heroimages\jakiro.png
+* app\src\main\assets\heroimages\juggernaut.png
+* app\src\main\assets\heroimages\keeper_of_the_light.png
+* app\src\main\assets\heroimages\kunkka.png
+* app\src\main\assets\heroimages\legion_commander.png
+* app\src\main\assets\heroimages\leshrac.png
+* app\src\main\assets\heroimages\lich.png
+* app\src\main\assets\heroimages\life_stealer.png
+* app\src\main\assets\heroimages\lina.png
+* app\src\main\assets\heroimages\lion.png
+* app\src\main\assets\heroimages\lone_druid.png
+* app\src\main\assets\heroimages\luna.png
+* app\src\main\assets\heroimages\lycan.png
+* app\src\main\assets\heroimages\magnataur.png
+* app\src\main\assets\heroimages\medusa.png
+* app\src\main\assets\heroimages\meepo.png
+* app\src\main\assets\heroimages\mirana.png
+* app\src\main\assets\heroimages\morphling.png
+* app\src\main\assets\heroimages\naga_siren.png
+* app\src\main\assets\heroimages\necrolyte.png
+* app\src\main\assets\heroimages\nevermore.png
+* app\src\main\assets\heroimages\night_stalker.png
+* app\src\main\assets\heroimages\nyx_assassin.png
+* app\src\main\assets\heroimages\obsidian_destroyer.png
+* app\src\main\assets\heroimages\ogre_magi.png
+* app\src\main\assets\heroimages\omniknight.png
+* app\src\main\assets\heroimages\phantom_assassin.png
+* app\src\main\assets\heroimages\phantom_lancer.png
+* app\src\main\assets\heroimages\puck.png
+* app\src\main\assets\heroimages\pudge.png
+* app\src\main\assets\heroimages\pugna.png
+* app\src\main\assets\heroimages\queenofpain.png
+* app\src\main\assets\heroimages\rattletrap.png
+* app\src\main\assets\heroimages\razor.png
+* app\src\main\assets\heroimages\riki.png
+* app\src\main\assets\heroimages\rubick.png
+* app\src\main\assets\heroimages\sand_king.png
+* app\src\main\assets\heroimages\shadow_demon.png
+* app\src\main\assets\heroimages\shadow_shaman.png
+* app\src\main\assets\heroimages\shredder.png
+* app\src\main\assets\heroimages\silencer.png
+* app\src\main\assets\heroimages\skeleton_king.png
+* app\src\main\assets\heroimages\skywrath_mage.png
+* app\src\main\assets\heroimages\slardar.png
+* app\src\main\assets\heroimages\slark.png
+* app\src\main\assets\heroimages\sniper.png
+* app\src\main\assets\heroimages\spectre.png
+* app\src\main\assets\heroimages\spirit_breaker.png
+* app\src\main\assets\heroimages\storm_spirit.png
+* app\src\main\assets\heroimages\sven.png
+* app\src\main\assets\heroimages\templar_assassin.png
+* app\src\main\assets\heroimages\tidehunter.png
+* app\src\main\assets\heroimages\tinker.png
+* app\src\main\assets\heroimages\tiny.png
+* app\src\main\assets\heroimages\treant.png
+* app\src\main\assets\heroimages\troll_warlord.png
+* app\src\main\assets\heroimages\tusk.png
+* app\src\main\assets\heroimages\undying.png
+* app\src\main\assets\heroimages\ursa.png
+* app\src\main\assets\heroimages\vengefulspirit.png
+* app\src\main\assets\heroimages\venomancer.png
+* app\src\main\assets\heroimages\viper.png
+* app\src\main\assets\heroimages\visage.png
+* app\src\main\assets\heroimages\warlock.png
+* app\src\main\assets\heroimages\weaver.png
+* app\src\main\assets\heroimages\windrunner.png
+* app\src\main\assets\heroimages\wisp.png
+* app\src\main\assets\heroimages\witch_doctor.png
+* app\src\main\assets\heroimages\zuus.png
+* app\src\main\assets\items\
+* app\src\main\assets\items\abyssal_blade.png
+* app\src\main\assets\items\aegis.png
+* app\src\main\assets\items\ancient_janggo.png
+* app\src\main\assets\items\arcane_boots.png
+* app\src\main\assets\items\arcane_boots2.png
+* app\src\main\assets\items\armlet.png
+* app\src\main\assets\items\armlet_active.png
+* app\src\main\assets\items\assault.png
+* app\src\main\assets\items\band_of_elvenskin.png
+* app\src\main\assets\items\basher.png
+* app\src\main\assets\items\belt_of_strength.png
+* app\src\main\assets\items\bfury.png
+* app\src\main\assets\items\black_king_bar.png
+* app\src\main\assets\items\blade_mail.png
+* app\src\main\assets\items\blade_of_alacrity.png
+* app\src\main\assets\items\blades_of_attack.png
+* app\src\main\assets\items\blink.png
+* app\src\main\assets\items\bloodstone.png
+* app\src\main\assets\items\boots.png
+* app\src\main\assets\items\boots_of_elves.png
+* app\src\main\assets\items\bottle.png
+* app\src\main\assets\items\bottle_doubledamage.png
+* app\src\main\assets\items\bottle_empty.png
+* app\src\main\assets\items\bottle_haste.png
+* app\src\main\assets\items\bottle_illusion.png
+* app\src\main\assets\items\bottle_invisibility.png
+* app\src\main\assets\items\bottle_medium.png
+* app\src\main\assets\items\bottle_regeneration.png
+* app\src\main\assets\items\bottle_small.png
+* app\src\main\assets\items\bracer.png
+* app\src\main\assets\items\branches.png
+* app\src\main\assets\items\broadsword.png
+* app\src\main\assets\items\buckler.png
+* app\src\main\assets\items\butterfly.png
+* app\src\main\assets\items\chainmail.png
+* app\src\main\assets\items\cheese.png
+* app\src\main\assets\items\circlet.png
+* app\src\main\assets\items\clarity.png
+* app\src\main\assets\items\claymore.png
+* app\src\main\assets\items\cloak.png
+* app\src\main\assets\items\courier.png
+* app\src\main\assets\items\courier_dire.png
+* app\src\main\assets\items\courier_dire_flying.png
+* app\src\main\assets\items\courier_radiant.png
+* app\src\main\assets\items\courier_radiant_flying.png
+* app\src\main\assets\items\cyclone.png
+* app\src\main\assets\items\dagon.png
+* app\src\main\assets\items\dagon_2.png
+* app\src\main\assets\items\dagon_3.png
+* app\src\main\assets\items\dagon_4.png
+* app\src\main\assets\items\dagon_5.png
+* app\src\main\assets\items\demon_edge.png
+* app\src\main\assets\items\desolator.png
+* app\src\main\assets\items\diffusal_blade.png
+* app\src\main\assets\items\diffusal_blade_2.png
+* app\src\main\assets\items\dust.png
+* app\src\main\assets\items\eagle.png
+* app\src\main\assets\items\emptyitembg.png
+* app\src\main\assets\items\energy_booster.png
+* app\src\main\assets\items\ethereal_blade.png
+* app\src\main\assets\items\flask.png
+* app\src\main\assets\items\flask2.png
+* app\src\main\assets\items\flying_courier.png
+* app\src\main\assets\items\force_staff.png
+* app\src\main\assets\items\gauntlets.png
+* app\src\main\assets\items\gem.png
+* app\src\main\assets\items\gem_of_true_sight.png
+* app\src\main\assets\items\ghost.png
+* app\src\main\assets\items\ghost_scepter.png
+* app\src\main\assets\items\gloves.png
+* app\src\main\assets\items\gloves_of_haste.png
+* app\src\main\assets\items\greater_clarity.png
+* app\src\main\assets\items\greater_crit.png
+* app\src\main\assets\items\greater_salve.png
+* app\src\main\assets\items\greevil_whistle.png
+* app\src\main\assets\items\greevil_whistle_toggle.png
+* app\src\main\assets\items\halloween_candy_corn.png
+* app\src\main\assets\items\halloween_rapier.png
+* app\src\main\assets\items\hand_of_midas.png
+* app\src\main\assets\items\headdress.png
+* app\src\main\assets\items\heart.png
+* app\src\main\assets\items\heavens_halberd.png
+* app\src\main\assets\items\helm_of_iron_will.png
+* app\src\main\assets\items\helm_of_the_dominator.png
+* app\src\main\assets\items\hood_of_defiance.png
+* app\src\main\assets\items\hyperstone.png
+* app\src\main\assets\items\invis_sword.png
+* app\src\main\assets\items\item.txt
+* app\src\main\assets\items\javelin.png
+* app\src\main\assets\items\lesser_crit.png
+* app\src\main\assets\items\lifesteal.png
+* app\src\main\assets\items\maelstrom.png
+* app\src\main\assets\items\magic_stick.png
+* app\src\main\assets\items\magic_wand.png
+* app\src\main\assets\items\manta.png
+* app\src\main\assets\items\mantle.png
+* app\src\main\assets\items\mask_of_madness.png
+* app\src\main\assets\items\medallion_of_courage.png
+* app\src\main\assets\items\mekansm.png
+* app\src\main\assets\items\mithril_hammer.png
+* app\src\main\assets\items\mjollnir.png
+* app\src\main\assets\items\mjollnir_arc.000.png
+* app\src\main\assets\items\mjollnir_arc.001.png
+* app\src\main\assets\items\mjollnir_arc.002.png
+* app\src\main\assets\items\monkey_king_bar.png
+* app\src\main\assets\items\mystery_arrow.png
+* app\src\main\assets\items\mystery_hook.png
+* app\src\main\assets\items\mystery_missile.png
+* app\src\main\assets\items\mystery_toss.png
+* app\src\main\assets\items\mystery_vacuum.png
+* app\src\main\assets\items\mystic_staff.png
+* app\src\main\assets\items\necronomicon.png
+* app\src\main\assets\items\necronomicon_2.png
+* app\src\main\assets\items\necronomicon_3.png
+* app\src\main\assets\items\null_talisman.png
+* app\src\main\assets\items\oblivion_staff.png
+* app\src\main\assets\items\ogre_axe.png
+* app\src\main\assets\items\orb_of_venom.png
+* app\src\main\assets\items\orchid.png
+* app\src\main\assets\items\pers.png
+* app\src\main\assets\items\phase_boots.png
+* app\src\main\assets\items\pipe.png
+* app\src\main\assets\items\place_building.png
+* app\src\main\assets\items\platemail.png
+* app\src\main\assets\items\point_booster.png
+* app\src\main\assets\items\poor_mans_shield.png
+* app\src\main\assets\items\power_treads.png
+* app\src\main\assets\items\power_treads_agi.png
+* app\src\main\assets\items\power_treads_int.png
+* app\src\main\assets\items\power_treads_str.png
+* app\src\main\assets\items\present.png
+* app\src\main\assets\items\quarterstaff.png
+* app\src\main\assets\items\quelling_blade.png
+* app\src\main\assets\items\radiance.png
+* app\src\main\assets\items\radiance_inactive.png
+* app\src\main\assets\items\rapier.png
+* app\src\main\assets\items\reaver.png
+* app\src\main\assets\items\recipe.png
+* app\src\main\assets\items\recipe_scroll.png
+* app\src\main\assets\items\refresher.png
+* app\src\main\assets\items\relic.png
+* app\src\main\assets\items\ring_of_aquila.png
+* app\src\main\assets\items\ring_of_aquila_active.png
+* app\src\main\assets\items\ring_of_basilius.png
+* app\src\main\assets\items\ring_of_basilius_active.png
+* app\src\main\assets\items\ring_of_health.png
+* app\src\main\assets\items\ring_of_protection.png
+* app\src\main\assets\items\ring_of_regen.png
+* app\src\main\assets\items\robe.png
+* app\src\main\assets\items\rod_of_atos.png
+* app\src\main\assets\items\salve.png
+* app\src\main\assets\items\sange.png
+* app\src\main\assets\items\sange_and_yasha.png
+* app\src\main\assets\items\satanic.png
+* app\src\main\assets\items\shadow_amulet.png
+* app\src\main\assets\items\sheepstick.png
+* app\src\main\assets\items\shivas_guard.png
+* app\src\main\assets\items\skadi.png
+* app\src\main\assets\items\slippers.png
+* app\src\main\assets\items\slippers_of_halcyon.png
+* app\src\main\assets\items\smoke_of_deceit.png
+* app\src\main\assets\items\sobi_mask.png
+* app\src\main\assets\items\soul_booster.png
+* app\src\main\assets\items\soul_ring.png
+* app\src\main\assets\items\sphere.png
+* app\src\main\assets\items\staff_of_wizardry.png
+* app\src\main\assets\items\stout_shield.png
+* app\src\main\assets\items\talisman_of_evasion.png
+* app\src\main\assets\items\tango.png
+* app\src\main\assets\items\tango_single.png
+* app\src\main\assets\items\tombstone.png
+* app\src\main\assets\items\tpscroll.png
+* app\src\main\assets\items\tranquil_boots.png
+* app\src\main\assets\items\tranquil_boots_active.png
+* app\src\main\assets\items\travel_boots.png
+* app\src\main\assets\items\ultimate_orb.png
+* app\src\main\assets\items\ultimate_scepter.png
+* app\src\main\assets\items\urn_of_shadows.png
+* app\src\main\assets\items\vanguard.png
+* app\src\main\assets\items\veil_of_discord.png
+* app\src\main\assets\items\vitality_booster.png
+* app\src\main\assets\items\vladmir.png
+* app\src\main\assets\items\void_stone.png
+* app\src\main\assets\items\ward_observer.png
+* app\src\main\assets\items\ward_sentry.png
+* app\src\main\assets\items\winter_cake.png
+* app\src\main\assets\items\winter_coal.png
+* app\src\main\assets\items\winter_coco.png
+* app\src\main\assets\items\winter_cookie.png
+* app\src\main\assets\items\winter_greevil_chewy.png
+* app\src\main\assets\items\winter_greevil_garbage.png
+* app\src\main\assets\items\winter_greevil_treat.png
+* app\src\main\assets\items\winter_ham.png
+* app\src\main\assets\items\winter_kringle.png
+* app\src\main\assets\items\winter_mushroom.png
+* app\src\main\assets\items\winter_skates.png
+* app\src\main\assets\items\winter_snowball.png
+* app\src\main\assets\items\winter_stocking.png
+* app\src\main\assets\items\winter_woolies.png
+* app\src\main\assets\items\wraith_band.png
+* app\src\main\assets\items\yasha.png
+* app\src\main\java\
+* app\src\main\java\technited\
+* app\src\main\java\technited\dota2central\
+* app\src\main\java\technited\dota2central\CircularImageView.java
+* app\src\main\java\technited\dota2central\Dashboard.java
+* app\src\main\java\technited\dota2central\DateTimeHandler.java
+* app\src\main\java\technited\dota2central\DrawingView.java
+* app\src\main\java\technited\dota2central\EquiWHRL.java
+* app\src\main\java\technited\dota2central\FriendListHandler.java
+* app\src\main\java\technited\dota2central\FriendProfile.java
+* app\src\main\java\technited\dota2central\Friends.java
+* app\src\main\java\technited\dota2central\FriendsListAdapter.java
+* app\src\main\java\technited\dota2central\FriendsListItem.java
+* app\src\main\java\technited\dota2central\HeroFilter.java
+* app\src\main\java\technited\dota2central\HeroFilterSelected.java
+* app\src\main\java\technited\dota2central\HeroFilterSelectedAdapter.java
+* app\src\main\java\technited\dota2central\HeroFilterSelection.java
+* app\src\main\java\technited\dota2central\HeroFilterSelectionAdapter.java
+* app\src\main\java\technited\dota2central\HeroImageTiles.java
+* app\src\main\java\technited\dota2central\HeroListHandler.java
+* app\src\main\java\technited\dota2central\HeroListItem.java
+* app\src\main\java\technited\dota2central\ImageEditor.java
+* app\src\main\java\technited\dota2central\ImageFileHandler.java
+* app\src\main\java\technited\dota2central\ItemListHandler.java
+* app\src\main\java\technited\dota2central\JsonParser.java
+* app\src\main\java\technited\dota2central\LocalDB.java
+* app\src\main\java\technited\dota2central\LocalPreferences.java
+* app\src\main\java\technited\dota2central\MainScreen.java
+* app\src\main\java\technited\dota2central\MapStatus.java
+* app\src\main\java\technited\dota2central\MatchDetail.java
+* app\src\main\java\technited\dota2central\MatchDetails.java
+* app\src\main\java\technited\dota2central\MatchDetailsHandler.java
+* app\src\main\java\technited\dota2central\MatchHistory.java
+* app\src\main\java\technited\dota2central\MatchHistoryAdapter.java
+* app\src\main\java\technited\dota2central\MatchHistoryHandler.java
+* app\src\main\java\technited\dota2central\MatchHistoryListItem.java
+* app\src\main\java\technited\dota2central\NotesAlertDialog.java
+* app\src\main\java\technited\dota2central\NotesHandler.java
+* app\src\main\java\technited\dota2central\Notification.java
+* app\src\main\java\technited\dota2central\NotificationAdapter.java
+* app\src\main\java\technited\dota2central\NotificationHandler.java
+* app\src\main\java\technited\dota2central\NotificationListItem.java
+* app\src\main\java\technited\dota2central\NotificationReciever.java
+* app\src\main\java\technited\dota2central\PageAdapter_1.java
+* app\src\main\java\technited\dota2central\PageAdapter_2.java
+* app\src\main\java\technited\dota2central\PageAdapter_3.java
+* app\src\main\java\technited\dota2central\PagerAdapter_MatchDetail.java
+* app\src\main\java\technited\dota2central\PlayerMatchDetailAdapter.java
+* app\src\main\java\technited\dota2central\PlayerMatchDetailItem.java
+* app\src\main\java\technited\dota2central\RoundedImageView.java
+* app\src\main\java\technited\dota2central\Settings.java
+* app\src\main\java\technited\dota2central\SignUp.java
+* app\src\main\java\technited\dota2central\SlidingMenuAdapter.java
+* app\src\main\java\technited\dota2central\SlidingMenuItems.java
+* app\src\main\java\technited\dota2central\SpashScreen.java
+* app\src\main\java\technited\dota2central\Statistics.java
+* app\src\main\java\technited\dota2central\StatisticsAdapter.java
+* app\src\main\java\technited\dota2central\StatisticsListItem.java
+* app\src\main\java\technited\dota2central\URLConstructor.java
+* app\src\main\java\technited\dota2central\UserInfoHandler.java
+* app\src\main\java\technited\dota2central\util\
+* app\src\main\java\technited\dota2central\util\SystemUiHider.java
+* app\src\main\java\technited\dota2central\util\SystemUiHiderBase.java
+* app\src\main\java\technited\dota2central\util\SystemUiHiderHoneycomb.java
+* app\src\main\res\
+* app\src\main\res\anim\
+* app\src\main\res\anim\in_from_left.xml
+* app\src\main\res\anim\in_from_right.xml
+* app\src\main\res\anim\out_to_left.xml
+* app\src\main\res\anim\out_to_right.xml
+* app\src\main\res\drawable-hdpi\
+* app\src\main\res\drawable-hdpi\accept_note.png
+* app\src\main\res\drawable-hdpi\action_bar_logo.png
+* app\src\main\res\drawable-hdpi\action_bar_refresh.png
+* app\src\main\res\drawable-hdpi\cancel_note.png
+* app\src\main\res\drawable-hdpi\dark_grey_back.png
+* app\src\main\res\drawable-hdpi\dashboard_curved_border_mid_layout.png
+* app\src\main\res\drawable-hdpi\dashboard_default_hero.png
+* app\src\main\res\drawable-hdpi\dashboard_hero_bot_seperator.png
+* app\src\main\res\drawable-hdpi\dashboard_hero_info_background.xml
+* app\src\main\res\drawable-hdpi\dashboard_hero_info_background_block.png
+* app\src\main\res\drawable-hdpi\dashboard_hero_rectangle_back.png
+* app\src\main\res\drawable-hdpi\dashboard_icon.png
+* app\src\main\res\drawable-hdpi\dashboard_icon_red.png
+* app\src\main\res\drawable-hdpi\dashboard_icon_selector.xml
+* app\src\main\res\drawable-hdpi\dashboard_line_border_mid_layout.png
+* app\src\main\res\drawable-hdpi\dashboard_notification_icon.png
+* app\src\main\res\drawable-hdpi\dashboard_pipe_mid_layout.png
+* app\src\main\res\drawable-hdpi\dashboard_rank_icon.png
+* app\src\main\res\drawable-hdpi\dashboard_wins_icon.png
+* app\src\main\res\drawable-hdpi\dire_ancient.png
+* app\src\main\res\drawable-hdpi\dire_melee.png
+* app\src\main\res\drawable-hdpi\dire_ranged.png
+* app\src\main\res\drawable-hdpi\grey_seperator_1px.png
+* app\src\main\res\drawable-hdpi\ic_launcher.png
+* app\src\main\res\drawable-hdpi\loss.png
+* app\src\main\res\drawable-hdpi\mainscreen_tabs_scroller.xml
+* app\src\main\res\drawable-hdpi\map.png
+* app\src\main\res\drawable-hdpi\navigation_drawer_icon.png
+* app\src\main\res\drawable-hdpi\notes_icon.png
+* app\src\main\res\drawable-hdpi\profile_pic_default.png
+* app\src\main\res\drawable-hdpi\radiant_ancient.png
+* app\src\main\res\drawable-hdpi\radiant_melee.png
+* app\src\main\res\drawable-hdpi\radiant_ranged.png
+* app\src\main\res\drawable-hdpi\row_disable_selection_white.xml
+* app\src\main\res\drawable-hdpi\settings.png
+* app\src\main\res\drawable-hdpi\settings_icon.png
+* app\src\main\res\drawable-hdpi\settings_icon_red.png
+* app\src\main\res\drawable-hdpi\settings_icon_selector.xml
+* app\src\main\res\drawable-hdpi\sign_out_icon.png
+* app\src\main\res\drawable-hdpi\sign_out_icon_red.png
+* app\src\main\res\drawable-hdpi\sign_out_icon_selector.xml
+* app\src\main\res\drawable-hdpi\signout.png
+* app\src\main\res\drawable-hdpi\signup_badge_icon.png
+* app\src\main\res\drawable-hdpi\signup_bg.jpg
+* app\src\main\res\drawable-hdpi\signup_button_image.png
+* app\src\main\res\drawable-hdpi\signup_checkbox_off.png
+* app\src\main\res\drawable-hdpi\signup_checkbox_on.png
+* app\src\main\res\drawable-hdpi\signup_link_icon.png
+* app\src\main\res\drawable-hdpi\sliding_menu_list_selector_background.xml
+* app\src\main\res\drawable-hdpi\sliding_menu_list_selector_text.xml
+* app\src\main\res\drawable-hdpi\spash_screen_image.png
+* app\src\main\res\drawable-hdpi\tick_icon.png
+* app\src\main\res\drawable-hdpi\tower_dire.png
+* app\src\main\res\drawable-hdpi\tower_radiant.png
+* app\src\main\res\drawable-hdpi\tower_rubble.png
+* app\src\main\res\drawable-hdpi\txtbox.xml
+* app\src\main\res\drawable-hdpi\win.png
+* app\src\main\res\drawable-mdpi\
+* app\src\main\res\drawable-mdpi\ic_launcher.png
+* app\src\main\res\drawable-xhdpi\
+* app\src\main\res\drawable-xhdpi\ic_launcher.png
+* app\src\main\res\drawable-xxhdpi\
+* app\src\main\res\drawable-xxhdpi\ic_launcher.png
+* app\src\main\res\layout-sw360dp\
+* app\src\main\res\layout-sw360dp\match_detail_list_row.xml
+* app\src\main\res\layout\
+* app\src\main\res\layout\activity_hero_filter.xml
+* app\src\main\res\layout\activity_main_screen.xml
+* app\src\main\res\layout\activity_match_details.xml
+* app\src\main\res\layout\activity_settings.xml
+* app\src\main\res\layout\activity_sign_up.xml
+* app\src\main\res\layout\activity_spash_screen.xml
+* app\src\main\res\layout\d2c_action_bar.xml
+* app\src\main\res\layout\d2c_action_bar_2.xml
+* app\src\main\res\layout\d2c_action_bar_3.xml
+* app\src\main\res\layout\d2c_action_bar_4.xml
+* app\src\main\res\layout\dashboard_fragment.xml
+* app\src\main\res\layout\friends_fragment.xml
+* app\src\main\res\layout\friends_list_row.xml
+* app\src\main\res\layout\friends_profile.xml
+* app\src\main\res\layout\hero_filters_selected_row.xml
+* app\src\main\res\layout\hero_filters_selection_row.xml
+* app\src\main\res\layout\hero_selected_fragment.xml
+* app\src\main\res\layout\hero_selection_fragment.xml
+* app\src\main\res\layout\map_status_fragment.xml
+* app\src\main\res\layout\match_detail_fragment.xml
+* app\src\main\res\layout\match_detail_list_row.xml
+* app\src\main\res\layout\match_detail_list_seperatorrow.xml
+* app\src\main\res\layout\match_history.xml
+* app\src\main\res\layout\match_history_list_row.xml
+* app\src\main\res\layout\notes_window.xml
+* app\src\main\res\layout\notification_fragment.xml
+* app\src\main\res\layout\notification_list_row.xml
+* app\src\main\res\layout\sliding_menu_row.xml
+* app\src\main\res\layout\sliding_menu_row_head.xml
+* app\src\main\res\layout\statistics_fragment.xml
+* app\src\main\res\layout\statistics_row_data.xml
+* app\src\main\res\layout\statistics_row_head.xml
+* app\src\main\res\menu\
+* app\src\main\res\menu\friend_profile.xml
+* app\src\main\res\menu\hero_filter.xml
+* app\src\main\res\menu\main_screen.xml
+* app\src\main\res\menu\match_details.xml
+* app\src\main\res\menu\match_history.xml
+* app\src\main\res\menu\settings.xml
+* app\src\main\res\menu\sign_up.xml
+* app\src\main\res\values-v11\
+* app\src\main\res\values-v11\styles.xml
+* app\src\main\res\values-v14\
+* app\src\main\res\values-v14\styles.xml
+* app\src\main\res\values-w820dp\
+* app\src\main\res\values-w820dp\dimens.xml
+* app\src\main\res\values\
+* app\src\main\res\values\attrs.xml
+* app\src\main\res\values\colors.xml
+* app\src\main\res\values\dimens.xml
+* app\src\main\res\values\strings.xml
+* app\src\main\res\values\styles.xml
+* build.gradle
+* gradle\
+* gradle\wrapper\
+* gradle\wrapper\gradle-wrapper.jar
+* gradle\wrapper\gradle-wrapper.properties
+* gradlew
+* gradlew.bat
+* ic_launcher-web.png
+* proguard-project.txt
+* settings.gradle
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:19.1.0
+
+Replaced Libraries with Dependencies:
+-------------------------------------
+The importer recognized the following library projects as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the source files in your project were of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the library replacement in the import wizard and try
+again:
+
+appcompat-v7 => [com.android.support:appcompat-v7:19.1.0]
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app\src\main\AndroidManifest.xml
+* assets\ => app\src\main\assets\
+* res\ => app\src\main\res\
+* src\ => app\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

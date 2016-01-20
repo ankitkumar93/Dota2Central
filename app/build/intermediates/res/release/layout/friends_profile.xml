@@ -1,0 +1,698 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+    
+    <!-- Action Bar Custom-->
+  <include
+    android:id="@+id/d2cActionBar"  
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_alignParentTop="true"
+    layout="@layout/d2c_action_bar" />
+  
+  <android.support.v4.widget.DrawerLayout
+    android:layout_below="@+id/d2cActionBar"
+    android:id="@+id/drawer_layout_friends"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >  
+   
+  <RelativeLayout
+       android:id="@+id/friendProfileContainer" 
+       android:layout_width="match_parent"
+       android:layout_height = "wrap_content" >
+    
+    <RelativeLayout
+        android:id="@+id/friendsProfileLayoutTop"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@color/white" >
+        
+         <technited.dota2central.CircularImageView
+            android:id="@+id/friendsProfileLayoutTop_userImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/profile_pic_default"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp" />
+         
+         <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/friendsProfileLayoutTop_userImage"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp" >
+
+            <TextView
+                android:id="@+id/friendsProfileLayoutTop_userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:gravity="center"
+                android:text="@string/profile_name"
+                android:textColor="@color/profileTextGrey"
+                android:textSize="18sp"
+                android:singleLine="true"/>
+
+            <TextView
+                android:id="@+id/friendsProfileLayoutTop_userLastLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/profileTextGrey"
+                android:textSize="10sp"
+                android:text="@string/last_logout" />
+
+        </LinearLayout>
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/friendsProfileLayoutMid"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@color/backgroundDirtyWhite" 
+        android:layout_below="@+id/friendsProfileLayoutTop" >
+         
+        <RelativeLayout
+            android:id="@+id/friendsProfileLayoutMid_TopBorders" 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+            <ImageView 
+                android:id="@+id/friendsProfileLayoutMid_TopBorders_Left"
+                android:src="@drawable/dashboard_line_border_mid_layout"
+                android:layout_height="wrap_content"
+                android:layout_width="25.25dp"
+                android:layout_alignParentTop="true" />
+           
+            <ImageView
+                android:id="@+id/friendsProfileLayoutMid_TopBorders_Mid"
+                android:src="@drawable/dashboard_curved_border_mid_layout"
+                android:layout_height="7dp"
+                android:layout_width="39.50dp"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/friendsProfileLayoutMid_TopBorders_Left" />
+            
+            <ImageView
+                android:id="@+id/friendsProfileLayoutMid_TopBorders_Right"
+                android:src="@drawable/dashboard_line_border_mid_layout"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/friendsProfileLayoutMid_TopBorders_Mid" />
+                        
+        </RelativeLayout>
+        
+        <ImageView 
+            android:id="@+id/friendsProfileLayoutMid_PipeTop"
+            android:layout_width="wrap_content"
+            android:layout_height="5dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/dashboard_pipe_mid_layout"
+            android:layout_below="@+id/friendsProfileLayoutMid_TopBorders" />
+        
+        <ImageView 
+            android:id="@+id/friendsProfileLayoutMid_WinsIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/dashboard_wins_icon"
+            android:layout_below="@+id/friendsProfileLayoutMid_PipeTop" />
+        
+        <ImageView 
+            android:id="@+id/friendsProfileLayoutMid_PipeMid_Top"
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:layout_marginLeft="45dp"
+            android:background="@drawable/dashboard_pipe_mid_layout"
+            android:layout_below="@+id/friendsProfileLayoutMid_WinsIcon" />
+        
+        <ImageView 
+            android:id="@+id/friendsProfileLayoutMid_RankIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/dashboard_rank_icon"
+            android:layout_below="@+id/friendsProfileLayoutMid_PipeMid_Top" />
+        
+        <ImageView 
+            android:id="@+id/friendsProfileLayoutMid_PipeMid_Bot"
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:layout_marginLeft="45dp"
+            android:background="@drawable/dashboard_pipe_mid_layout"
+            android:layout_below="@+id/friendsProfileLayoutMid_RankIcon" />
+        
+        <ImageView 
+            android:id="@+id/friendsProfileLayoutMid_NotificationIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/dashboard_notification_icon"
+            android:layout_below="@+id/friendsProfileLayoutMid_PipeMid_Bot" />
+        
+        <ImageView 
+            android:id="@+id/friendsProfileLayoutMid_PipeBot"
+            android:layout_width="wrap_content"
+            android:layout_height="5dp"
+            android:layout_marginLeft="45dp"
+            android:background="@drawable/dashboard_pipe_mid_layout"
+            android:layout_below="@+id/friendsProfileLayoutMid_NotificationIcon" />
+        
+        <LinearLayout
+            android:id="@+id/friendsProfileLayoutMid_WinSpecifier"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_toRightOf="@+id/friendsProfileLayoutMid_WinsIcon"
+            android:layout_below="@+id/friendsProfileLayoutMid_PipeTop"
+            android:layout_marginTop="16dp">
+            
+            <TextView
+                android:id="@+id/friendsProfileLayoutMid_WinSpecifier_WinsValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:gravity="center"
+                android:text="@string/dashboard_default_value"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+       		 <TextView
+             	android:id="@+id/friendsProfileLayoutMid_WinSpecifier_WinsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:gravity="center"
+                android:text="@string/dashboard_wins_text"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:layout_marginLeft="5dp" />
+            
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/friendsProfileLayoutMid_WinRateSpecifier"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_toRightOf="@+id/friendsProfileLayoutMid_RankIcon"
+            android:layout_below="@+id/friendsProfileLayoutMid_PipeMid_Top"
+            android:layout_marginTop="16dp">
+       		 
+            <TextView
+             	android:id="@+id/friendsProfileLayoutMid_WinRateSpecifier_WinRateText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:gravity="center"
+                android:text="@string/dashboard_win_ratio_text"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:layout_marginLeft="5dp" />
+            
+            <TextView
+                android:id="@+id/friendsProfileLayoutMid_WinRateSpecifier_WinRateValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:gravity="center"
+                android:text="@string/dashboard_default_value"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+            
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/friendsProfileLayoutMid_NotificationSpecifier"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_toRightOf="@+id/friendsProfileLayoutMid_NotificationIcon"
+            android:layout_below="@+id/friendsProfileLayoutMid_PipeMid_Bot"
+            android:layout_marginTop="16dp">
+            
+            <TextView
+                android:id="@+id/friendsProfileLayoutMid_NotificationSpecifier_NotificationValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:gravity="center"
+                android:text="@string/no"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+       		 <TextView
+             	android:id="@+id/friendsProfileLayoutMid_NotificationSpecifier_NotificationText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:gravity="center"
+                android:text="@string/dashboard_notification_text"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:layout_marginLeft="5dp" />
+            
+        </LinearLayout>
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/friendsProfileLayoutBot"
+        android:layout_height="fill_parent"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/friendsProfileLayoutMid"
+        android:layout_marginTop="10dp" >
+        
+        <TextView
+            android:id="@+id/friendsProfileLayoutBot_Heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="@string/dashboard_recent_matches_text"
+            android:textSize="20sp" />
+        
+
+        
+        <LinearLayout
+            android:id="@+id/friendsProfileLayoutBot_HeroesTop"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/friendsProfileLayoutBot_Heading"
+            android:weightSum="100" >
+            
+            <technited.dota2central.HeroImageTiles
+                android:id="@+id/friendsProfileLayoutBot_HeroesTop_LeftHero"
+                android:background="@drawable/dashboard_hero_rectangle_back"
+                android:layout_width="0dp"
+                android:layout_weight="32"
+                android:layout_height="wrap_content"
+                android:gravity="left" >
+               
+                <ImageView
+                	android:id="@+id/friendsProfileLayoutBot_HeroesTop_LeftHero_Image"
+                	android:layout_width="match_parent"
+                	android:layout_height="match_parent"
+                	android:scaleType="fitXY"
+                	android:layout_margin="4dp"
+                	android:background="@drawable/dashboard_default_hero"
+                	android:layout_centerInParent="true" />
+                
+                <RelativeLayout
+                    android:id="@+id/friendsProfileLayoutBot_HeroesTop_LeftHero_Info"
+                    android:layout_alignParentBottom="true"
+                	android:layout_width="match_parent"
+               	 	android:layout_height="30dp"
+                	android:layout_margin="4dp"
+                	android:background="@drawable/dashboard_hero_info_background" >
+                    
+                    <TextView
+               			android:id="@+id/friendsProfileLayoutBot_HeroesTop_LeftHero_Info_HeroName"
+               		    android:layout_width="wrap_content"
+                		android:layout_height="wrap_content"
+                		android:layout_gravity="left"
+                		android:layout_alignParentLeft="true"
+                		android:text="@string/dashboard_default_hero_name"
+               			android:textColor="@color/white"
+                		android:layout_marginLeft="5dp"
+                		android:layout_marginTop="2dp"
+                		android:textSize="10sp" />
+            
+            		<TextView
+               		 	android:id="@+id/friendsProfileLayoutBot_HeroesTop_LeftHero_Info_HeroDate"
+              		  	android:layout_width="wrap_content"
+              		  	android:layout_height="wrap_content"
+               			android:layout_gravity="left"
+               		 	android:layout_alignParentBottom="true"
+               		 	android:layout_alignParentLeft="true"
+              		 	android:text="@string/dashboard_default_hero_date"
+               			android:textColor="@color/white"
+               			android:layout_marginLeft="5dp"
+               			android:layout_marginBottom="2dp"
+               			android:textSize="8sp" />
+            
+            		<TextView
+                		android:id="@+id/friendsProfileLayoutBot_HeroesTop_LeftHero_Info_HeroTime"
+                		android:layout_width="wrap_content"
+                		android:layout_height="wrap_content"
+                		android:layout_gravity="left"
+               			android:layout_alignParentRight="true"
+                		android:layout_alignParentBottom="true"
+                		android:text="@string/dashboard_default_hero_time"
+                		android:textColor="@color/white"
+                		android:layout_marginRight="5dp"
+                		android:layout_marginBottom="2dp"
+                		android:textSize="8sp" />
+                    
+                </RelativeLayout>
+               
+            </technited.dota2central.HeroImageTiles>
+            
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2" />
+            
+            <technited.dota2central.HeroImageTiles
+                android:id="@+id/friendsProfileLayoutBot_HeroesTop_MidHero"
+                android:background="@drawable/dashboard_hero_rectangle_back"
+                android:layout_width="0dp"
+                android:layout_weight="32"
+                android:layout_height="wrap_content"
+                android:gravity="center"  >
+               
+                <ImageView
+                	android:id="@+id/friendsProfileLayoutBot_HeroesTop_MidHero_Image"
+                	android:layout_width="match_parent"
+                	android:layout_height="match_parent"
+                	android:layout_margin="4dp"
+                	android:background="@drawable/dashboard_default_hero"
+                	android:layout_centerInParent="true" />
+                
+                <RelativeLayout
+                    android:id="@+id/friendsProfileLayoutBot_HeroesTop_MidHero_Info"
+                    android:layout_alignParentBottom="true"
+                	android:layout_width="match_parent"
+               	 	android:layout_height="30dp"
+                	android:layout_margin="4dp"
+                	android:scaleType="fitXY"
+                	android:background="@drawable/dashboard_hero_info_background" >
+                    
+                    <TextView
+               			android:id="@+id/friendsProfileLayoutBot_HeroesTop_MidHero_Info_HeroName"
+               		    android:layout_width="wrap_content"
+                		android:layout_height="wrap_content"
+                		android:layout_gravity="left"
+                		android:layout_alignParentLeft="true"
+                		android:text="@string/dashboard_default_hero_name"
+               			android:textColor="@color/white"
+                		android:layout_marginLeft="5dp"
+                		android:layout_marginTop="2dp"
+                		android:textSize="10sp" />
+            
+            		<TextView
+               		 	android:id="@+id/friendsProfileLayoutBot_HeroesTop_MidHero_Info_HeroDate"
+              		  	android:layout_width="wrap_content"
+              		  	android:layout_height="wrap_content"
+               			android:layout_gravity="left"
+               		 	android:layout_alignParentBottom="true"
+               		 	android:layout_alignParentLeft="true"
+              		 	android:text="@string/dashboard_default_hero_date"
+               			android:textColor="@color/white"
+               			android:layout_marginLeft="5dp"
+               			android:layout_marginBottom="2dp"
+               			android:textSize="8sp" />
+            
+            		<TextView
+                		android:id="@+id/friendsProfileLayoutBot_HeroesTop_MidHero_Info_HeroTime"
+                		android:layout_width="wrap_content"
+                		android:layout_height="wrap_content"
+                		android:layout_gravity="left"
+               			android:layout_alignParentRight="true"
+                		android:layout_alignParentBottom="true"
+                		android:text="@string/dashboard_default_hero_time"
+                		android:textColor="@color/white"
+                		android:layout_marginRight="5dp"
+                		android:layout_marginBottom="2dp"
+                		android:textSize="8sp" />
+                    
+                </RelativeLayout>
+               
+            </technited.dota2central.HeroImageTiles>
+            
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2" />
+            
+            <technited.dota2central.HeroImageTiles
+                android:id="@+id/friendsProfileLayoutBot_HeroesTop_RightHero"
+                android:background="@drawable/dashboard_hero_rectangle_back"
+                android:layout_width="0dp"
+                android:layout_weight="32"
+                android:layout_height="wrap_content"
+                android:gravity="right" >
+               
+                <ImageView
+                	android:id="@+id/friendsProfileLayoutBot_HeroesTop_RightHero_Image"
+                	android:layout_width="match_parent"
+                	android:layout_height="match_parent"
+                	android:layout_margin="4dp"
+                	android:scaleType="fitXY"
+                	android:background="@drawable/dashboard_default_hero"
+                	android:layout_centerInParent="true" />
+                
+                <RelativeLayout
+                    android:id="@+id/friendsProfileLayoutBot_HeroesTop_RightHero_Info"
+                    android:layout_alignParentBottom="true"
+                	android:layout_width="match_parent"
+               	 	android:layout_height="30dp"
+                	android:layout_margin="4dp"
+                	android:background="@drawable/dashboard_hero_info_background" >
+                    
+                    <TextView
+               			android:id="@+id/friendsProfileLayoutBot_HeroesTop_RightHero_Info_HeroName"
+               		    android:layout_width="wrap_content"
+                		android:layout_height="wrap_content"
+                		android:layout_gravity="left"
+                		android:layout_alignParentLeft="true"
+                		android:text="@string/dashboard_default_hero_name"
+               			android:textColor="@color/white"
+                		android:layout_marginLeft="5dp"
+                		android:layout_marginTop="2dp"
+                		android:textSize="10sp" />
+            
+            		<TextView
+               		 	android:id="@+id/friendsProfileLayoutBot_HeroesTop_RightHero_Info_HeroDate"
+              		  	android:layout_width="wrap_content"
+              		  	android:layout_height="wrap_content"
+               			android:layout_gravity="left"
+               		 	android:layout_alignParentBottom="true"
+               		 	android:layout_alignParentLeft="true"
+              		 	android:text="@string/dashboard_default_hero_date"
+               			android:textColor="@color/white"
+               			android:layout_marginLeft="5dp"
+               			android:layout_marginBottom="2dp"
+               			android:textSize="8sp" />
+            
+            		<TextView
+                		android:id="@+id/friendsProfileLayoutBot_HeroesTop_RightHero_Info_HeroTime"
+                		android:layout_width="wrap_content"
+                		android:layout_height="wrap_content"
+                		android:layout_gravity="left"
+               			android:layout_alignParentRight="true"
+                		android:layout_alignParentBottom="true"
+                		android:text="@string/dashboard_default_hero_time"
+                		android:textColor="@color/white"
+                		android:layout_marginRight="5dp"
+                		android:layout_marginBottom="2dp"
+                		android:textSize="8sp" />
+                    
+                </RelativeLayout>
+               
+            </technited.dota2central.HeroImageTiles>
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:id="@+id/friendsProfileLayoutBot_HeroesBot"
+            android:layout_below="@+id/friendsProfileLayoutBot_HeroesTop"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp" >
+            
+            <RelativeLayout
+                android:id="@+id/friendsProfileLayoutBot_HeroesBot_TopHero"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" >
+                
+                <technited.dota2central.RoundedImageView
+                   	android:id="@+id/friendsProfileLayoutBot_HeroesBot_TopHero_Image"
+                   	android:layout_width="40dp"
+                   	android:layout_height="40dp"
+                   	android:src="@drawable/dashboard_default_hero"
+                   	android:layout_alignParentLeft="true"
+                   	android:layout_marginLeft="10dp"
+                   	android:layout_marginTop="5dp"
+                   	android:layout_marginBottom="5dp" />
+                
+                 <TextView
+                   	android:id="@+id/friendsProfileLayoutBot_HeroesBot_TopHero_Name"
+                   	android:layout_width="wrap_content"
+                   	android:layout_height="wrap_content"
+                   	android:layout_gravity="left"
+                   	android:gravity="center"
+                   	android:text="@string/dashboard_default_hero_name"
+                   	android:textColor="@color/black"
+                   	android:layout_marginLeft="10dp"
+                   	android:layout_marginTop="14dp"
+                   	android:textSize="16sp"
+                   	android:layout_toRightOf="@+id/friendsProfileLayoutBot_HeroesBot_TopHero_Image" />
+                
+                 <TextView
+                   	android:id="@+id/friendsProfileLayoutBot_HeroesBot_TopHero_Date"
+                   	android:layout_width="wrap_content"
+                   	android:layout_height="wrap_content"
+                   	android:layout_gravity="left"
+                   	android:gravity="center"
+                   	android:text="@string/dashboard_default_hero_date"
+                   	android:textColor="@color/black"
+                   	android:layout_marginTop="18dp"
+                   	android:textSize="10sp"
+                   	android:layout_toLeftOf="@+id/friendsProfileLayoutBot_HeroesBot_TopHero_DTSeperator"
+                   	android:layout_marginRight="2dp" />
+                 	 
+                   <TextView
+                   	android:id="@+id/friendsProfileLayoutBot_HeroesBot_TopHero_DTSeperator"
+                   	android:layout_width="wrap_content"
+                   	android:layout_height="wrap_content"
+                   	android:layout_gravity="left"
+                   	android:gravity="center"
+                   	android:text="@string/dashboard_default_seperator"
+                   	android:textColor="@color/dashboardDefaultSeperatorGrey"
+                   	android:layout_marginRight="2dp"
+                   	android:layout_marginTop="18dp"
+                   	android:textSize="10sp"
+                   	android:layout_toLeftOf="@+id/friendsProfileLayoutBot_HeroesBot_TopHero_Time" />
+                  
+               <TextView
+                   	android:id="@+id/friendsProfileLayoutBot_HeroesBot_TopHero_Time"
+                   	android:layout_width="wrap_content"
+                   	android:layout_height="wrap_content"
+                   	android:layout_gravity="left"
+                   	android:gravity="center"
+                   	android:text="@string/dashboard_default_hero_time"
+                   	android:textColor="@color/black"
+                   	android:layout_marginRight="10dp"
+                   	android:layout_marginTop="18dp"
+                   	android:textSize="10sp"
+                   	android:layout_alignParentRight="true" />
+               
+                 <ImageView
+                  	android:id="@+id/friendsProfileLayoutBot_HeroesBot_TopHero_Border"
+                  	android:layout_width="match_parent"
+                  	android:layout_height="wrap_content"
+                  	android:src="@drawable/dashboard_hero_bot_seperator"
+                  	android:layout_below="@+id/friendsProfileLayoutBot_HeroesBot_TopHero_Image"
+                  	android:layout_marginTop="2dp" />
+                
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/friendsProfileLayoutBot_HeroesBot_BotHero"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" >
+                
+                <technited.dota2central.RoundedImageView
+                   	android:id="@+id/friendsProfileLayoutBot_HeroesBot_BotHero_Image"
+                   	android:layout_width="40dp"
+                   	android:layout_height="40dp"
+                   	android:src="@drawable/dashboard_default_hero"
+                   	android:layout_alignParentLeft="true"
+                   	android:layout_marginLeft="10dp"
+                   	android:layout_marginTop="5dp"
+                   	android:layout_marginBottom="5dp" />
+                
+                 <TextView
+                   	android:id="@+id/friendsProfileLayoutBot_HeroesBot_BotHero_Name"
+                   	android:layout_width="wrap_content"
+                   	android:layout_height="wrap_content"
+                   	android:layout_gravity="left"
+                   	android:gravity="center"
+                   	android:text="@string/dashboard_default_hero_name"
+                   	android:textColor="@color/black"
+                   	android:layout_marginLeft="10dp"
+                   	android:layout_marginTop="14dp"
+                   	android:textSize="16sp"
+                   	android:layout_toRightOf="@+id/friendsProfileLayoutBot_HeroesBot_BotHero_Image" />
+                
+                 <TextView
+                   	android:id="@+id/friendsProfileLayoutBot_HeroesBot_BotHero_Date"
+                   	android:layout_width="wrap_content"
+                   	android:layout_height="wrap_content"
+                   	android:layout_gravity="left"
+                   	android:gravity="center"
+                   	android:text="@string/dashboard_default_hero_date"
+                   	android:textColor="@color/black"
+                   	android:layout_marginTop="18dp"
+                   	android:textSize="10sp"
+                   	android:layout_toLeftOf="@+id/friendsProfileLayoutBot_HeroesBot_BotHero_DTSeperator"
+                   	android:layout_marginRight="2dp" />
+                 	 
+                   <TextView
+                   	android:id="@+id/friendsProfileLayoutBot_HeroesBot_BotHero_DTSeperator"
+                   	android:layout_width="wrap_content"
+                   	android:layout_height="wrap_content"
+                   	android:layout_gravity="left"
+                   	android:gravity="center"
+                   	android:text="@string/dashboard_default_seperator"
+                   	android:textColor="@color/dashboardDefaultSeperatorGrey"
+                   	android:layout_marginRight="2dp"
+                   	android:layout_marginTop="18dp"
+                   	android:textSize="10sp"
+                   	android:layout_toLeftOf="@+id/friendsProfileLayoutBot_HeroesBot_BotHero_Time" />
+                  
+               <TextView
+                   	android:id="@+id/friendsProfileLayoutBot_HeroesBot_BotHero_Time"
+                   	android:layout_width="wrap_content"
+                   	android:layout_height="wrap_content"
+                   	android:layout_gravity="left"
+                   	android:gravity="center"
+                   	android:text="@string/dashboard_default_hero_time"
+                   	android:textColor="@color/black"
+                   	android:layout_marginRight="10dp"
+                   	android:layout_marginTop="18dp"
+                   	android:textSize="10sp"
+                   	android:layout_alignParentRight="true" />
+               
+                 <ImageView
+                  	android:id="@+id/friendsProfileLayoutBot_HeroesBot_BotHero_Border"
+                  	android:layout_width="match_parent"
+                  	android:layout_height="wrap_content"
+                  	android:src="@drawable/dashboard_hero_bot_seperator"
+                  	android:layout_below="@+id/friendsProfileLayoutBot_HeroesBot_BotHero_Image"
+                  	android:layout_marginTop="2dp" />
+                
+            </RelativeLayout> 
+            
+        </LinearLayout> 
+        
+    </RelativeLayout>
+    
+    </RelativeLayout>
+    
+  </ScrollView>
+    
+    <ListView android:id="@+id/left_drawer_friends"
+        android:layout_width="260dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="@null"
+        android:background="@color/white" />
+    
+    </android.support.v4.widget.DrawerLayout>
+    
+</RelativeLayout><!-- From: file:/G:/Android%20Dev/Android%20Apps/Dota2Central/app/src/main/res/layout/friends_profile.xml -->

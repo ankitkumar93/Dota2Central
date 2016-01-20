@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="red">#960200</color>
+    <color name="imageBackGrey">#777777</color>
+    <color name="profileTextGrey">#2d2d2d</color>
+    <color name="backgroundDirtyWhite">#f0f0f0</color>
+    <color name="dashboardDefaultSeperatorGrey">#a8a8a8</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="darkGrey">#3b3b3b</color>
+    <color name="offwhite">#ffffe4</color>
+    <color name="selectorWhite">#f0f0f0</color>
+    <color name="logoutBlue">#0000ff</color>
+    <color name="logoutGreen">#00ff00</color>
+    <color name="matchDetailSeperator">#e0e0e0</color>
+    <color name="matchDetailHeaders">#c9c9c9</color>
+    <color name="goldenColorStatistics">#feb405</color>
+    <color name="silverColorStatistics">#898989</color>
+    <color name="slidingMenuGrey">#575757</color>
+
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?><RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <RelativeLayout
+        android:id="@+id/matchDetailSeperatorRow_Top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp" >
+        
+        <TextView
+            android:id="@+id/matchDetailSeperatorRow_TeamName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true" />
+        
+        <TextView
+            android:id="@+id/matchDetailSeperatorRow_HitsLabel"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="@string/match_details_hits"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/matchDetailHeaders"
+            android:layout_centerVertical="true"
+            android:textAlignment="center"
+            android:gravity="center" />
+        
+        <TextView
+            android:id="@+id/matchDetailSeperatorRow_AssistsLabel"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="@string/match_details_assists"
+            android:layout_toLeftOf="@+id/matchDetailSeperatorRow_HitsLabel"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/matchDetailHeaders"
+            android:layout_centerVertical="true"
+            android:textAlignment="center"
+            android:gravity="center" />
+        
+        <TextView
+            android:id="@+id/matchDetailSeperatorRow_DeathsLabel"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="@string/match_details_deaths"
+            android:layout_toLeftOf="@+id/matchDetailSeperatorRow_AssistsLabel"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/matchDetailHeaders"
+            android:layout_centerVertical="true"
+            android:textAlignment="center"
+            android:gravity="center"  />
+        
+        <TextView
+            android:id="@+id/matchDetailSeperatorRow_KillsLabel"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="@string/match_details_kills"
+            android:layout_toLeftOf="@+id/matchDetailSeperatorRow_DeathsLabel"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/matchDetailHeaders"
+            android:layout_centerVertical="true"
+            android:textAlignment="center"
+            android:gravity="center" />
+        
+        
+    </RelativeLayout>
+    
+</RelativeLayout>

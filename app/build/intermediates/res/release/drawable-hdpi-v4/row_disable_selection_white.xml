@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <item android:state_activated="true"
+        android:drawable="@color/white" />
+    
+    <item android:state_focused="true"
+        android:drawable="@color/white" />
+ 
+    <item android:state_pressed="true"
+        android:drawable="@color/white" />
+ 
+    <item android:drawable="@color/white" />
+    
+</selector><!-- From: file:/G:/Android%20Dev/Android%20Apps/Dota2Central/app/src/main/res/drawable-hdpi/row_disable_selection_white.xml -->
